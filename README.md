@@ -38,6 +38,24 @@ ARCHITECTURE DIAGRAM
 
 ![image](https://user-images.githubusercontent.com/80060708/122597320-d30e6e00-d088-11eb-9816-7c005e9072f0.png)
 
+LONG DESCRIPTION:
+
+This system is a combination of hardware and software components. The hardware part consists of different sensors like soil moisture sensor, IR sensor, etc
+ whereas the software part consists of an android based application connected to the arduino board and other hardware components using Internet of Things (IoT). 
+The android based application consists of signals and a database in which readings are displayed from sensors and are inserted using the hardware. 
+This research tries to automate the process of irrigation on the farmland by monitoring the soil water level of the soil relative to the plant being cultivated and the adaptively sprinkling water to simulate the effect of rainfall.  
+Moisture Sensor: The Soil Moisture Sensor is used to measure the volumetric water content in the soil. 
+	1. This makes it ideal for performing experiments in plants by having constant information about the amount of water currently present in soil
+	2. If the moisture content is less than the threshold value (which is pre-fed into the arduino board), a prompt message is sent to the device and automatically a sprinkler connected to the arduino will start sprinkling water on the affected area. 
+Arduino: Arduino is an open source computer hardware and software company, project and user community. It is the best board to get started with electronics and coding.
+IR sensor:  it is an electronic device, that emits the light in order to sense some object of the surroundings. An IR sensor can measure the heat of an object as well as detects the motion. Usually, in the infrared spectrum, all the objects radiate some form of thermal radiation. 
+
+SOLUTION ROAD MAP:
+![image](https://user-images.githubusercontent.com/80060708/122597639-487a3e80-d089-11eb-882a-b0ab15d3727b.png)
+
+
+
+
 
 
 
