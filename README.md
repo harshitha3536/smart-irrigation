@@ -51,6 +51,10 @@ Arduino: Arduino is an open source computer hardware and software company, proje
 IR sensor:  it is an electronic device, that emits the light in order to sense some object of the surroundings. An IR sensor can measure the heat of an object as well as detects the motion. Usually, in the infrared spectrum, all the objects radiate some form of thermal radiation. 
 
 SOLUTION ROAD MAP:
+
+
+
+
 ![image](https://user-images.githubusercontent.com/80060708/122597639-487a3e80-d089-11eb-882a-b0ab15d3727b.png)
 
 
