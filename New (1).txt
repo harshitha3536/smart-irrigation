@@ -1,0 +1,140 @@
+#define IO_USERNAME  "iotirrigationap"
+#define IO_KEY       "aio_WuNJ677gMWYcTTKvd8UzPcus0eVC"
+/*********** WIFI Configuration **************/
+
+#define WIFI_SSID       "project"
+#define WIFI_PASS       "project1234"
+
+
+#include "AdafruitIO_WiFi.h"
+AdafruitIO_WiFi io(IO_USERNAME, IO_KEY, WIFI_SSID, WIFI_PASS);
+
+/******** Main Program Starts Here ***********/
+#include <ESP8266WiFi.h>
+#include <AdafruitIO.h>
+#include <Adafruit_MQTT.h>
+#include <ArduinoHttpClient.h>
+
+// These are used to set the direction of the bridge driver.
+
+
+#define m1 D0 //IN1
+#define m2 D1 //IN2
+
+const int fire=D5;
+const int trace=D6;
+
+AdafruitIO_Feed *command = io.feed("automation"); // Set up the 'command' feed
+AdafruitIO_Feed *analog1 = io.feed("moisture");
+AdafruitIO_Feed *analog2 = io.feed("animal");
+
+
+int firestatus=1,tracestatus=1,lightstatus=1;
+// SETUP
+void setup()
+{
+  // Configure pins
+  pinMode(fire, INPUT_PULLUP);
+  pinMode(trace, INPUT_PULLUP);
+ 
+
+  
+  
+ pinMode(m1, OUTPUT);
+  pinMode(m2, OUTPUT);
+
+
+    digitalWrite(m2,LOW);
+    digitalWrite(m1,LOW);
+    
+    
+ 
+  Serial.begin(9600);
+  Serial.print("Connecting to Adafruit IO");
+  io.connect();
+
+  // set up a message handler for the 'command' feed.
+  // the handleMessage function (defined below)
+  // will be called whenever a message is
+  // received from adafruit io.
+  command->onMessage(handleMessage);  
+
+  while(io.status() < AIO_CONNECTED) {
+    Serial.print(".");
+    delay(50);
+  }
+
+  // we are connected
+  Serial.println();
+  Serial.println(io.statusText());
+  analog1->save(0);
+ analog2->save(0);
+ 
+}
+
+// MAIN CODE
+void loop()
+
+{
+   analog1->save(0);
+ analog2->save(0);
+ 
+  io.run();
+  firestatus=digitalRead(fire);
+  tracestatus=digitalRead(trace);
+ 
+  delay(500);
+  if(firestatus==LOW)
+ 
+  {
+      analog1->save(100);
+    
+   delay(5000); 
+     
+  }
+  
+
+      if(tracestatus==LOW)
+      
+      
+  {
+       analog2->save(100);
+       digitalWrite(m2,HIGH);
+       
+  delay(5000);
+   digitalWrite(m2,LOW);
+   }
+ 
+  
+
+}
+
+// this part of the code runs whenever there's a new message on Adafruit.io feed
+void handleMessage(AdafruitIO_Data *data) {
+  
+  String commandStr = data->toString(); // store the incoming commands in a string
+  
+  // received message
+  Serial.print("received <- ");
+  Serial.println(commandStr);
+delay(3000);
+
+  if (commandStr.equalsIgnoreCase(" on")){    
+    Serial.println("pump on");
+    digitalWrite(m1,HIGH);
+    digitalWrite(m2,HIGH);
+    delay(1000);
+   digitalWrite(m2,LOW);
+  }
+  // RIGHT
+  if (commandStr.equalsIgnoreCase("light off")){    
+    Serial.println("pump off");
+  
+    digitalWrite(m1,LOW);
+    digitalWrite(m2,HIGH);
+    delay(1000);
+   digitalWrite(m2,LOW);
+  }
+   
+  
+}
