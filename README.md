@@ -95,6 +95,18 @@ SAMPLE OUTPUT:
 ![image](https://user-images.githubusercontent.com/80060708/122600128-f89d7680-d08c-11eb-95b9-552d02b57e84.png)
 
 
+CONCLUSION:
+The smart irrigation system implemented is cost effective for optimizing water resources for agricultural production. 
+The proposed system can be used to switch on/off the water sprinkler depending on the soil moisture levels thereby making the process simpler to use.
+ Through this project it can be concluded that there can be considerable development in irrigation with those of IOT and automation.
+The developed system is beneficial for the users and works in a cost-effective manner. It reduces water consumption to a greater extent.  
+The system can be used in green houses and also it will be very useful in areas where water scarcity is a major problem.
+ The harvest efficiency will increment and wastage of yields will be diminished utilizing this water system framework. 
+The smart irrigation system implemented is feasible and cost effective for optimizing water resources for agricultural production.
+Thus this system is a solution to the problems faced in the existing process of irrigation.
+
+
+
 
 
 
