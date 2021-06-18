@@ -58,6 +58,47 @@ SOLUTION ROAD MAP:
 ![image](https://user-images.githubusercontent.com/80060708/122597639-487a3e80-d089-11eb-882a-b0ab15d3727b.png)
 
 
+SAMPLE OUTPUT:
+
+
+
+
+
+
+![image](https://user-images.githubusercontent.com/80060708/122599647-554c6180-d08c-11eb-946d-c667f47162c9.png)
+
+
+
+
+MODEL WEBSITE:
+
+
+
+https://ucs19426.wixsite.com/Rmdec
+
+
+ADVANTAGES:
+Drip irrigation system
+Individual monitoring
+Making wild-animals not to enter
+Easy monitoring about water level and soil condition.
+
+SAMPLE OUTPUT:
+
+
+
+![image](https://user-images.githubusercontent.com/80060708/122599995-cc81f580-d08c-11eb-859e-e57fbcc4f1b8.png)
+
+![image](https://user-images.githubusercontent.com/80060708/122600050-dc013e80-d08c-11eb-9d28-aa71859a4eeb.png)
+![image](https://user-images.githubusercontent.com/80060708/122600079-e6233d00-d08c-11eb-9c8e-08e80eec607d.png)
+
+![image](https://user-images.githubusercontent.com/80060708/122600128-f89d7680-d08c-11eb-95b9-552d02b57e84.png)
+
+
+
+
+
+
 
 
 
