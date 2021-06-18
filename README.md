@@ -1,5 +1,5 @@
-# smart-irrigation
-abstract:
+# smart-irrigation:
+ABSTRACT:
 Interconnection of number of devices through internet describes the Internet of things (IoT). 
 Every object is connected with each other through unique identifier so that data can be transferred without human to human interaction
 The smart objects embedded with sensors enables interaction with the physical and logical worlds according to the concept of IoT. 
