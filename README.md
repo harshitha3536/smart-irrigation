@@ -34,6 +34,11 @@ The following sections describe how each product functions and the advantages an
 DEMO VIDEO
 https://youtu.be/YPS0R0AGArQ
 
+ARCHITECTURE DIAGRAM
+
+![image](https://user-images.githubusercontent.com/80060708/122597320-d30e6e00-d088-11eb-9816-7c005e9072f0.png)
+
+
 
 
 
